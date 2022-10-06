@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* ССЫЛКА НА ВАШУ КАРТИНКУ НА ФОНЕ */
+  background-image: url(https://source.unsplash.com/1L71sPT5XKc);
+
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.container {
+  height: 100vh;
+  max-width: 56rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+/* Стили описания профиля */
+
+.profile {
+  width: 60%;
+  background-color: #fff;
+  opacity: 0.7;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.profile.dark-mode {
+  background-color: #343434;
+  color: #fff;
+}
+
+.profile .data {
+  padding: 3rem;
+}
+
+.profile svg {
+  color: #0d644d;
+  padding-right: 1rem;
+  fill: currentColor;
+  height: 1rem;
+}
+
+.profile .description {
+  padding-top: 30px;
+}
+
+.divider {
+  padding-top: 0.75rem;
+  border-color: #085f48;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  width: 80%;
+  opacity: 0.4;
+}
+
+.telegram_btn {
+  background-color: #085f48;
+  border-radius: 9999px;
+  border: none;
+  padding: 15px 30px;
+  margin: 20px 0;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.social {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.social svg {
+  color: #42766b;
+  height: 2rem;
+}
+
+/* Стили фотографии */
+
+.full-avatar {
+  width: 40%;
+}
+
+.small-avatar {
+  display: none;
+}
+
+.full-avatar img {
+  max-width: 100%;
+}
+
+/* Стили кнопки изменения темы */
+.js-change-theme {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.js-change-theme button {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+/* Стили для маленьких экранов */
+@media (max-width: 1024px) {
+  .container {
+    height: 80vh;
+  }
+
+  .full-avatar {
+    display: none;
+  }
+
+  .profile {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .small-avatar {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 9999px;
+    margin-top: -80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .data {
+    text-align: center;
+  }
+
+  .profile {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
