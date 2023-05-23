@@ -8,7 +8,7 @@ html {
 
 body {
   /* ССЫЛКА НА ВАШУ КАРТИНКУ НА ФОНЕ */
-  background-image: url(https://source.unsplash.com/1L71sPT5XKc);
+  background-image: url(https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80);
 
   background-size: cover;
   font-family: "Roboto", sans-serif;
@@ -122,10 +122,6 @@ body {
 
 /* Стили для маленьких экранов */
 @media (max-width: 1024px) {
-  .container {
-    height: 80vh;
-  }
-
   .full-avatar {
     display: none;
   }
@@ -141,9 +137,7 @@ body {
     height: 200px;
     object-fit: cover;
     border-radius: 9999px;
-    margin-top: -80px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
   }
 
   .data {
